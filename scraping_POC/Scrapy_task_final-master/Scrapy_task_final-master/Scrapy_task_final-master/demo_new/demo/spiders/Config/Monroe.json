@@ -1,0 +1,5 @@
+{"url":"https://cr.monroe-clerk.com/",
+"scraping":"/preceding-sibling::div","data":{"Case Type:":"//*[@id='headerCollapse']/div/div[1]/div[2]",
+"Date Filed:":"//*[@id='headerCollapse']/div/div[2]/div[2]","Location:":"//*[@id='headerCollapse']/div/div[3]/div[2]",
+"UCN:":"//*[@id='headerCollapse']/div/div[4]/div[2]","Judge:":"//*[@id='headerCollapse']/div/div[5]/div[2]",
+"Status:":"//*[@id='headerCollapse']/div/div[6]/div[2]"}}

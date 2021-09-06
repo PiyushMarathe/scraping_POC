@@ -1,0 +1,12 @@
+   {
+       "url": "https://justice1.dentoncounty.gov/PublicAccessDC/CaseDetail.aspx?CaseID=2660943",
+       "scraping": "/ancestor::tr/th",
+       "data": {
+
+           "Case Type:":"/html/body/table[3]/tbody/tr/td[3]/table/tbody/tr/td/table/tbody/tr[1]/td/b",
+           "Date Filed:":"/html/body/table[3]/tbody/tr/td[3]/table/tbody/tr/td/table/tbody/tr[2]/td/b",
+           "Location:":"/html/body/table[3]/tbody/tr/td[3]/table/tbody/tr/td/table/tbody/tr[3]/td/b",
+           "Judicial Officer:":"/html/body/table[3]/tbody/tr/td[3]/table/tbody/tr/td/table/tbody/tr[4]/td/b",
+           "Case Number History:":"/html/body/table[3]/tbody/tr/td[3]/table/tbody/tr/td/table/tbody/tr[5]/td/table/tbody/tr/td/b"
+       }
+   }

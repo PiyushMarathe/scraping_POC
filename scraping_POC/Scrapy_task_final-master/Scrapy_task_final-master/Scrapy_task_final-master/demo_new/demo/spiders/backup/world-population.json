@@ -1,0 +1,2 @@
+{"url": "https://www.worldometers.info/world-population/population-by-country/","scraping":"/preceding::td/a/", "data":{"China":"//*[@id=\"example2\"]/tbody/tr[1]/td[3]"
+}}
