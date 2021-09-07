@@ -7,22 +7,10 @@ import json
 import smtplib
 #import boto3
 
-EMAIL_ADDRESS = 'marathe.piyush295@gmail.com' #os.environ.get('EMAIL_USER')
-EMAIL_PASS = 'vhwemkjejepplzjp' #os.environ.get('EMAIL_PASSWORD')
 
 
-def notification():
-    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
-        smtp.starttls()
-        smtp.login(EMAIL_ADDRESS, EMAIL_PASS)
 
-        subject = 'Important! Attention Required regarding update'
-        body = 'It seems there is some update in the fields of the website you are trying to access'
 
-        msg = f'Subject: {subject}\n\n\n{body}'
-
-        smtp.sendmail(EMAIL_ADDRESS, 'piyushpm295@gmail.com', msg)
-        print("Mail sent")
 
 
 def compare(dict, file):
@@ -52,13 +40,6 @@ def compare(dict, file):
     if status:
         return True
     else:
-        mess=f"Old field -{s} is modified to new field-{s1}"
-        print(mess)
-        sns_client = boto3.client('sns')
-        sns_client.publish(
-            TargetArn='arn:aws:sns:us-east-2:478750502411:NotificationSNS',
-            Message=mess,
-            Subject=f'Difference detected in {url}  in {file} court website!')
         return False
 
 
